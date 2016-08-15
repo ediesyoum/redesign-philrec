@@ -1,0 +1,126 @@
+/* Responsive Nav by Alexxx666:
+https://github.com/Alexxx666/responsive-menu */
+
+.hidden {
+  display: none;
+}
+#menu_button_wrapper:before, #menu_button_wrapper:after {
+  content: '';
+  display: table;
+}
+#menu_button_wrapper:after {
+  clear: both;
+}
+nav {
+  font-family: Helvetica;
+  text-align: left;
+  background-color: black;
+  padding: 0px;
+}
+nav ul {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+@media (max-width: 760px) {
+  nav ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    top: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    }
+  }
+  nav ul li {
+      display: inline-block;
+      font-size: 16px;
+  }
+
+@media (max-width: 760px) {
+  nav ul li {
+      font-size: 16px;
+      display: block; }
+}
+  nav ul li a {
+    color: papayawhip;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  nav ul li a:hover {
+    color: lightgreen;
+    cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  nav ul li a {
+    width: 100%;
+  }
+}
+nav .current_page {
+    background-color: black;
+}
+nav .current_page a {
+  color: green;
+}
+
+#menu_button_wrapper {
+  display: none;
+  font-size: 16px;
+}
+  @media (max-width: 760px) {
+  #menu_button_wrapper {
+    display: block;
+    padding: .4em;
+    top: 0px;
+    color: #9d9d9d;
+    border-bottom: 1px solid #101010;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    /*margin-bottom: .5em;*/
+    }
+  }
+  #menu_button_wrapper #menu_button {
+    box-sizing: border-box;
+    float: left;
+    padding: .5em 1em;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+    #menu_button_wrapper #menu_button:hover {
+      cursor: pointer;
+      background-color: #333;
+  }
+  #menu_button_wrapper #menu_text {
+    display: inline-block;
+    line-height: 1;
+    float: left;
+  }
+  #menu_button_wrapper #hamburger {
+    float: right;
+  }
+  #menu_button_wrapper #hamburger span {
+    display: block;
+    background-color: #fff;
+    width: 1.2em;
+    height: .166666em;
+    border-radius: 1px;
+    margin: .125em 0;
+  }
+  #menu_button_wrapper #hamburger span:first-child {
+    margin-top: 0em;
+  }
+  #menu_button_wrapper #hamburger span:last-child {
+    margin-bottom: 0.1875em;
+  }
