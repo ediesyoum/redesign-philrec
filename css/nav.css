@@ -1,6 +1,8 @@
 /* Responsive Nav by Alexxx666:
 https://github.com/Alexxx666/responsive-menu */
 
+@import url('https://fonts.googleapis.com/css?family=Underdog');
+
 .hidden {
   display: none;
 }
@@ -12,7 +14,7 @@ https://github.com/Alexxx666/responsive-menu */
   clear: both;
 }
 nav {
-  font-family: Helvetica;
+  font-family: 'Underdog', cursive;
   text-align: left;
   background-color: black;
   padding: 0px;

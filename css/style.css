@@ -1,33 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Underdog');
+
+
 body {
   margin: 0;
-  overflow: hidden;
   background-image: url('../img/stacked2.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
+  font-family: 'Underdog', cursive;
 }
 h1 {
-  font-size: 60px;
+  font-size: 28px;
+  color: orange;
   margin: 10px 0px -20px 0px;
 }
 h2 {
   color: white;
 }
-div, article {
+article {
   color: lightgreen;
-  background-color: rgba(34,68,31,.9);
+  background-color: rgba(34,68,31,.975);
   border: 1px solid black;
   border-radius: 5px;
   max-width: 700px;
-  padding: 0px 20px 10px 20px;
+  padding: 0px 5px 5px 10px;
   margin: 20px auto;
 }
+.philarecx {
+  float: right;
+  top: 0px;
+}
 .navimg {
-  display: inline;
-  top:0px;
-  right: 0px;
-  margin:0px;
-  padding:0px;
+  align: center;
 }
 @media (max-width: 700px) {
   body {
@@ -40,10 +44,10 @@ div, article {
     margin: 20px auto;
   }
   img {
-    max-width: 70%;
+    max-width: 80%;
   }
   h1 {
-    font-size: 16px;
+    font-size: 24px;
     padding: 5px;
   }
   li {
